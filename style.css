@@ -29,7 +29,19 @@ p{
     font-size: 24px;
     text-align: center;
 }
+label{
+    color: #EDF2C2;
+}
+
 .checkbox{
     display: flex;
-    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+.number{
+    display: block;
+    text-align: center;
+}
+.n1{
+    background-color: #7C8C42;    
 }
