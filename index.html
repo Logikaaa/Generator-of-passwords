@@ -2,30 +2,28 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Генератор паролів</title>
+    <title>Generator of passwords</title>
 </head>
 <body>
-    <h1>Генератор паролів</h1>
-    <form>
-        <div class="checkbox">
-            <input type="checkbox" id="v1" name="v1" value="abc">
-            <label for="v1">abc</label><br>
-            <input type="checkbox" id="v2" name="v2" value="ABC">
-            <label for="v2">ABC</label><br>
-            <input type="checkbox" id="v3" name="v3" value="123">
-            <label for="v3">123</label><br>
-            <input type="checkbox" id="v4" name="v4" value="!?#">
-            <label for="v4">!?#</label><br>
-        </div>
-        <div class="number">
-            <input type="number" class="n1" name="n1">
-        </div>
-        <button type="button" class="button">Згенерувати</button>
-        
-        <h1>Згенерований пароль</h1>
-        <p class="result">66666666666666</p>
-    </form>
+    <div class="container">
+    <h1 class="title">Генератор паролів</h1>
+    <div class="option">
+        <label class="checkbox-container"><input type="checkbox" id="abc"><span class="custom-checkbox"></span>abc</label>
+        <label><input type="checkbox" id="ABC">ABC</label>
+    </div>
+    <div class="option">
+        <label><input type="checkbox" id="numbers">123</label>
+        <label><input type="checkbox" id="symbols">abc</label>
+    </div>
+    <label>Довжина пароля
+        <input type="number" id="count">
+    </label>
+    
+    <button type="button">Згенерувати</button>
+    <p>Згенерований пароль</p>
+    <div id="result"></div>
+</div>
 </body>
-<script src="script.js"></script>
 </html>
